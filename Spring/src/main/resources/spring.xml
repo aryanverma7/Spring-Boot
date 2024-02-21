@@ -1,0 +1,34 @@
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+<!--       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--       xsi:schemaLocation="-->
+<!--        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">-->
+
+<!--    <bean id="alien" class="org.example.Alien" scope="prototype">-->
+
+    <bean id="alien" class="org.example.Alien" autowire="byName">
+        <property name="age" value="21"/>
+
+<!--        <property name="age" value="21"> This is an Inner Bean i.e. others cant access the inner bean-->
+<!--            <bean id="lap" class="org.example.Laptop">-->
+<!--            </bean>-->
+<!--        </property>-->
+
+<!--        <property name="com" ref="lap1"/>-->
+
+<!--        <constructor-arg index="0" value="21"/>-->
+<!--        <constructor-arg index="1" ref="lap1"/>-->
+
+<!--        <constructor-arg name="lap" ref="lap1"/>-->
+<!--        <constructor-arg name="age" value="21"/>-->
+    </bean>
+
+<!--    <bean id="lap" class="org.example.Laptop" primary="false">-->
+<!--    <bean id="lap" class="org.example.Laptop">-->
+<!--    </bean>-->
+
+<!--    <bean id="com" class="org.example.Desktop" lazy-init="true"> It is used to create the bean when u call it-->
+<!--    <bean id="com" class="org.example.Desktop">-->
+<!--    </bean>-->
+
+<!--</beans>-->
+
